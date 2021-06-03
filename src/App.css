@@ -1,38 +1,54 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.App{
   text-align: center;
-}
+  background-image: url("https://html.sammy-codes.com/images/background.jpg");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+  
+  font-family: 'Sigmar One'
+  ;
+  margin-top: 0%;
+  padding-top: 2%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card {
+  font-family: 'Roboto';
+  text-align: center;
+  background-color: #fff5ab;
+  border-radius: 0.5em;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1; 
+}
+.card:hover{
+  
+  -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        opacity: 0.5;
+}
+.profil {
+  cursor: pointer;
+  background-color: #c449c2;
   color: white;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1em;
+  border-radius: 50%;
+  margin-left: 95px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: row wrap
 }
